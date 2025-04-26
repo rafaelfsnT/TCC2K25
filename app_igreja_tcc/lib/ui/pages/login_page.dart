@@ -1,4 +1,5 @@
 import 'package:app_igreja_tcc/ui/pages/forgot_password.dart';
+import 'package:app_igreja_tcc/ui/widgets/buttons_login.dart';
 import 'package:app_igreja_tcc/ui/widgets/campos_login.dart';
 import 'package:flutter/material.dart';
 
@@ -40,33 +41,10 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 32),
 
               // Campos de login (email e senha)
-              CamposLogin(
-              ),
+              CamposLogin(),
 
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFFFD700), // Dourado
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 50,
-                    vertical: 15,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                ),
-                onPressed: () {
-                  // Lógica de login
-                },
-                child: const Text(
-                  'Entrar',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.brown,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+              ButtonsLogin(
               ),
-              const SizedBox(height: 16),
 
               TextButton(
                 onPressed: () {
