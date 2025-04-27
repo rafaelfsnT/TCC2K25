@@ -1,3 +1,4 @@
+import 'package:app_igreja_tcc/ui/widgets/campos_accout.dart';
 import 'package:flutter/material.dart';
 
 class CreateAccout extends StatefulWidget {
@@ -11,27 +12,19 @@ class _CreateAccoutState extends State<CreateAccout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Criar Conta'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'Criar Conta',
-              style: TextStyle(fontSize: 24),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // Ação ao pressionar o botão
-              },
-              child: const Text('Criar Conta'),
-            ),
-          ],
-        ),
+      backgroundColor: const Color(0xFF5D4037),
+
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            'assets/images/nossa_senhora_carmo.png',
+            height: 350,
+            width: 350,
+          ),
+          const SizedBox(height: 24),
+          CamposAccout(),
+        ],
       ),
     );
   }

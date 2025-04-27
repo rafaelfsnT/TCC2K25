@@ -42,24 +42,28 @@ class _LoginPageState extends State<LoginPage> {
 
               // Campos de login (email e senha)
               CamposLogin(),
-
-              ButtonsLogin(
-              ),
-
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ForgotPassword(),
-                    ),
-                  );
-                },
-                child: const Text(
-                  'Esqueceu sua senha?',
-                  style: TextStyle(color: Colors.white70),
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ForgotPassword(),
+                      ),
+                    );
+                  },
+                  child: const Text('Esqueceu a senha?'
+                  ,style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                  ),
+                  ),
                 ),
               ),
+              const SizedBox(height: 16),
+              ButtonsLogin(),
             ],
           ),
         ),
