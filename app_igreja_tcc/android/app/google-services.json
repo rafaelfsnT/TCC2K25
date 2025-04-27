@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "480824987598",
+    "project_id": "app-igrejatcc",
+    "storage_bucket": "app-igrejatcc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480824987598:android:375e6f2132a166add9659f",
+        "android_client_info": {
+          "package_name": "com.example.app_igreja_tcc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNCLxgIzvdjhF_wSjLWYSffbVVc4KECy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
